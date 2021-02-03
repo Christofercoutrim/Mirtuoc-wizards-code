@@ -13,3 +13,5 @@ console.log(soma)
 console.log(subtracao)
 console.log(multiplicacao)
 console.log(divisao)
+
+// Achei mais descritivo citar separadamente cada equação, valeu demais 
