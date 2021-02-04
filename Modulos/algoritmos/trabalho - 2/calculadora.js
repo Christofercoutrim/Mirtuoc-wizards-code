@@ -4,7 +4,7 @@ let c = 8
 let valorPotencia = 3
 let valorRaiz = 2
 
-//usei let para que caso eu precise deixar a equação de uma maneira na qual o cliente possa escolher os valores 
+//usei let para eu depois deixar a equação de uma maneira na qual o cliente possa escolher os valores 
 
 const soma = `A soma dos valores citados é igual a ${a+b}`
 
