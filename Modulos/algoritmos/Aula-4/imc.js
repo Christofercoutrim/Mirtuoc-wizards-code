@@ -4,6 +4,6 @@ const imc = dadosDaPessoa.peso/(dadosDaPessoa.altura*dadosDaPessoa.altura)
 
 if (imc<29.9){
     console.log(`${dadosDaPessoa.nome}, você não está acima do peso`)
-}if(img>30){
+}if(imc>30){
     console.log(`${dadosDaPessoa.nome}, você está acima do peso`)
 }
