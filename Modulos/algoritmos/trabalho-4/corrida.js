@@ -27,7 +27,7 @@ function tunarCarro(carro,pecaNova,potenciaPecaNova){
             else
             return console.log(`Essa peça é inferior a que já está no carro, não é possivel coloca-la`)
     }if(pecaNova>3||pecaNova<1)
-        return console.log(`tipo de peça não existe`)
+        return console.log(`Esse tipo de peça não existe`)
 }
 function condicoesMotor(carro,pista){
     if((carro.motor-pista.retas*8)-pista.curvas*2*8>=1)
