@@ -1,5 +1,5 @@
 const listC = [criarC(true),criarC(true),criarC(true)]
-const pistas = [createP(10,7)]
+const pistas = [createP(10,7),createP(50,30)]
 
 function criarC(numeroCarros){
     if(numeroCarros===false)
@@ -57,17 +57,20 @@ function correr(carro,pista){
     }
 }
 function realizarCorrida(listaDeCarros,pista){
-   if(correr(listaDeCarros[0],pista[0])){
+    console.log('Aqui começa a corrida')
+   if(correr(listaDeCarros[0],pista)){
        console.log(`O carro 1 completou a corrida`)
    }else console.log(`O carro 1 não completou a corrida`)
-    if(correr(listaDeCarros[1],pista[0])){
+    if(correr(listaDeCarros[1],pista)){
         console.log(`O carro 2 completou a corrida`)
     }else console.log(`O carro 2 não completou a corrida`)
-    if(correr(listaDeCarros[2],pista[0])){
+    if(correr(listaDeCarros[2],pista)){
         console.log(`O carro 3 completou a corrida`)
     }else console.log(`O carro 3 não completou a corrida`)
+    console.log(`A corrida acaba aqui`)
 }
-tunarCarro(listC[0],3,30000)
-tunarCarro(listC[0],1,30000)
-tunarCarro(listC[0],2,30000)
-realizarCorrida(listC,pistas)
+tunarCarro(listC[0],3,3000)
+tunarCarro(listC[0],1,3000)
+tunarCarro(listC[0],2,3000)
+realizarCorrida(listC,pistas[0])
+realizarCorrida(listC,pistas[1])
