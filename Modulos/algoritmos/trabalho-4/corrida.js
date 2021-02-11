@@ -67,8 +67,7 @@ function realizarCorrida(listaDeCarros,pista){
         console.log(`O carro 3 completou a corrida`)
     }else console.log(`O carro 3 não completou a corrida`)
 }
-console.log(tunarCarro(listC[0],3,30000))
+tunarCarro(listC[0],3,30000)
 tunarCarro(listC[0],1,30000)
 tunarCarro(listC[0],2,30000)
 realizarCorrida(listC,pistas)
-console.log(correr(listC[0],pistas[0]))
