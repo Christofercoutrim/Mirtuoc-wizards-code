@@ -1,11 +1,8 @@
-const listC = [criarC(true),criarC(true),criarC(true)]
+const listC = [criarC('Chevette'),criarC('Ford K'),criarC('HB 20')]
 const pistas = [createP(10,7),createP(50,30)]
 
-function criarC(numeroCarros){
-    if(numeroCarros===false)
-    return'esse carro não existe'
-    else
-    return {motor:100, pneu:100, freio:100}
+function criarC(carroG){
+    return {name: carroG, motor:100, pneu:100, freio:100}
 }
 function createP(numeroCurvas,numeroRetas){
     return {curvas:numeroCurvas, retas:numeroRetas}
@@ -58,16 +55,10 @@ function correr(carro,pista){
 }
 function realizarCorrida(listaDeCarros,pista){
     console.log('Aqui começa a corrida')
-   if(correr(listaDeCarros[0],pista)){
-       console.log(`O carro 1 completou a corrida`)
-   }else console.log(`O carro 1 não completou a corrida`)
-    if(correr(listaDeCarros[1],pista)){
-        console.log(`O carro 2 completou a corrida`)
-    }else console.log(`O carro 2 não completou a corrida`)
-    if(correr(listaDeCarros[2],pista)){
-        console.log(`O carro 3 completou a corrida`)
-    }else console.log(`O carro 3 não completou a corrida`)
-    console.log(`A corrida acaba aqui`)
+for(let i = 0;i<listaDeCarros.length;i++){
+    if(correr(listaDeCarros[i],pista)){console.log(`O ${listaDeCarros[i].name} completou a corrida`)
+}else console.log(`O ${listaDeCarros[i].name} não completou a corrida`)
+}   console.log(`A corrida acaba aqui`)
 }
 tunarCarro(listC[0],3,3000)
 tunarCarro(listC[0],1,3000)
