@@ -1,5 +1,5 @@
 const listC = [criarC('Chevette'),criarC('Ford K'),criarC('HB 20')]
-const pistas = [createP(10,7),createP(50,30)]
+const pistas = [createP(6,7),createP(50,30),createP(10,6),createP(1,2)]
 
 function criarC(carroG){
     return {name: carroG, motor:100, pneu:100, freio:100}
@@ -63,5 +63,12 @@ for(let i = 0;i<listaDeCarros.length;i++){
 tunarCarro(listC[0],3,3000)
 tunarCarro(listC[0],1,3000)
 tunarCarro(listC[0],2,3000)
+
+tunarCarro(listC[1],3,500)
+tunarCarro(listC[1],1,300)
+tunarCarro(listC[1],2,400)
+
+realizarCorrida(listC,pistas[3])
 realizarCorrida(listC,pistas[0])
+realizarCorrida(listC,pistas[2])
 realizarCorrida(listC,pistas[1])
