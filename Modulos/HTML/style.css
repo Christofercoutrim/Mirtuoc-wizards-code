@@ -1,0 +1,31 @@
+.caixinha{
+    padding: 20px;
+}
+.film1{
+    width: 450px;
+    color:blue
+}
+.film2{
+    width: 450px;
+    color:blueviolet
+}
+.film3{
+    width: 450px;
+    color:red
+}
+.film4{
+    width: 450px;
+    color:aqua
+}
+.film1 img{
+    width: 300px;
+}
+.film2 img{
+    width: 300px;
+}
+.film3 img{
+    width: 300px;
+}
+.film4 img{
+    width:300px;
+}
